@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import { SafeAreaView, Text } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
+import TitleComponent from '@components/Title';
 
 function App() {
   useEffect(() => {
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <SafeAreaView>
-      <Text>Hello World</Text>
+      <TitleComponent>Hello World</TitleComponent>
     </SafeAreaView>
   );
 }
