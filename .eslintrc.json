@@ -17,16 +17,17 @@
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": "latest",
+        "ecmaVersion": 2020,
         "sourceType": "module",
         "project": "./tsconfig.json"
     },
+    "ignorePatterns": [".cz-config.js"],
     "plugins": [
         "react",
         "react-native",
         "@typescript-eslint",
         "prettier"
-    ],
+        ],
     "rules": {
         // prevent eslint to complain about the "styles" variable being used before it was defined
         "no-use-before-define": ["error", { "variables": false }],
